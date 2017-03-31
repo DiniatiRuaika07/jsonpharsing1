@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 </head>
+	<body>
 <?php 
 	$url_json = file_get_contents("http://api.kalau.web.id/api/absen?nip=14650015&tgs=2016-01-01&tge=2016-10-30");
 	$json_object = json_decode($url_json);
@@ -12,7 +13,7 @@
 <div class="kotak">
 <h3>Data Absensi Mobile</h3>
 <br>          
-  <table class="table table-condensed">
+  <table border = "1">
      <thead>
          <th >id</th>
          <th >nip</th>
@@ -55,7 +56,7 @@
 <div class="kotak">
   <h3> Data Absensi Finger  </h3>
   <br>
-<table class="table table-condensed">
+<table border="1">
 <center>
      <thead>
          <th>Finger id</th>
